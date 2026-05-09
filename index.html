@@ -22,7 +22,8 @@
 <meta name="twitter:title"       content="Nina Carducci — Photographe professionnelle à Bordeaux">
 <meta name="twitter:description" content="Nina Carducci, photographe professionnelle basée à Bordeaux. Portraits, mariages, concerts, événements d'entreprise. Contactez-moi pour un devis.">
 <meta name="twitter:image"       content="https://ninacarducci.github.io/assets/images2/nina.png">
-	
+	<!-- Préchargement de l'image critique du carousel -->
+<link rel="preload" as="image" href="./assets/images2/slider2/homme-costume-passage-pieton.webp">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,7 +139,7 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images2/slider2/homme-costume-passage-pieton.webp" class="d-block w-100" alt="homme en costume traversant un passage piéton" width="1920" height="888">
+				<img src="./assets/images2/slider2/homme-costume-passage-pieton.webp" class="d-block w-100" alt="homme en costume traversant un passage piéton" width="1920" height="888" fetchpriority="high">
 			</div>
 			<div class="carousel-item">
 				<img src="./assets/images2/slider2/foule-concert-festival-joie.webp" class="d-block w-100" alt="foule en train de célébrer un concert dans un festival"
@@ -163,8 +164,8 @@
 <section>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images2/nina.png" alt="portrait de Nina Carducci, photographe professionnelle en Île-de-France"
-		loading="lazy" width="1460" height="1456">
+		<img src="./assets/images2/nina.webp" alt="portrait de Nina Carducci, photographe professionnelle en Île-de-France"
+		loading="lazy" width="800"height="798">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
