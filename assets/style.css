@@ -69,8 +69,14 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
 }
+
+.carousel-item img {
+    height: auto;
+}
+
 #about-me {
 	flex: 2
 }
