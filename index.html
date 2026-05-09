@@ -15,8 +15,87 @@
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
+	<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nina Carducci Photographe",
+  "image": "https://ninacarducci.github.io/assets/images2/nina.png",
+  "description": "Nina Carducci, photographe professionnelle basée à Bordeaux. Spécialisée dans les portraits, mariages, concerts et événements d'entreprise.",
+  "url": "https://ninacarducci.github.io",
+  "telephone": "+33556677889",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "68 avenue Alsace-Lorraine",
+    "addressLocality": "Bordeaux",
+    "postalCode": "33200",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.8461,
+    "longitude": -0.5810
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+  ],
+  "priceRange": "€€",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services photographiques",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Shooting photo",
+          "description": "Séance photo en Île-de-France, matériel et déplacement inclus"
+        },
+        "price": "350",
+        "priceCurrency": "EUR",
+        "description": "Demi-journée"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Retouches photo",
+          "description": "Retouche professionnelle avec 2 allers-retours par photo"
+        },
+        "price": "50",
+        "priceCurrency": "EUR",
+        "description": "Par photo"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Album photos",
+          "description": "Album A4 personnalisé, 30 pages recto/verso"
+        },
+        "price": "400",
+        "priceCurrency": "EUR"
+      }
+    ]
+  }
+}
+</script>
 </head>
 <body>
+	<header>
 <div class="top-header">
 	<h1 class="name">Nina Carducci</h1>
 	<div class="nav">   
@@ -25,12 +104,14 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images2/instagram.png" alt=""></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images2/instagram.png" alt="logo-instagram"></a></li>
 		</ul>
 	</div>
 </div>
 <div id="header">
-
+</header>
+<main>
+	<section>
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -39,14 +120,14 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images2/slider2/homme-costume-passage-pieton.webp" class="d-block w-100" alt="homme en costume traversant un passage piéton, photo prise en contre-plongée avec un ciel nuageux en arrière-plan" width="1920" height="888">
+				<img src="./assets/images2/slider2/homme-costume-passage-pieton.webp" class="d-block w-100" alt="homme en costume traversant un passage piéton" width="1920" height="888">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images2/slider2/foule-concert-festival-joie.webp" class="d-block w-100" alt="foule en train de célébrer un concert dans un festival, photo prise en plein air avec une lumière chaude"
+				<img src="./assets/images2/slider2/foule-concert-festival-joie.webp" class="d-block w-100" alt="foule en train de célébrer un concert dans un festival"
 				loading="lazy" width="1920" height="888">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images2/slider2/couple-mariage-danse-soiree.webp" class="d-block w-100" alt="couple en train de danser lors d'une soirée de mariage, photo prise en intérieur avec une lumière chaleureuse"
+				<img src="./assets/images2/slider2/couple-mariage-danse-soiree.webp" class="d-block w-100" alt="couple en train de danser lors d'une soirée de mariage"
 				loading="lazy" width="1920" height="888">
 			</div>
 		</div>
@@ -60,6 +141,8 @@
 		</button>
 	</div>
 </div>
+</section>
+<section>
 <div id="about">
 	<div class="picture left">
 		<img src="./assets/images2/nina.png" alt="portrait de Nina Carducci, photographe professionnelle en Île-de-France"
@@ -72,6 +155,8 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+</section>
+<section>
 <div id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
@@ -96,6 +181,8 @@
 		</figure>
 	</div>
 </div>
+</section>
+<section>
 <div id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
@@ -140,17 +227,20 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+</section>
+</main>
+<footer>
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
+				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
-				<label>Email</label>
+				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
-				<label>Message</label>
+				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
@@ -160,5 +250,6 @@
 		</div>
 	</div>
 </div>
+</footer>
 </body>
 </html>
